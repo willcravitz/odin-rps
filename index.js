@@ -16,7 +16,7 @@ function playRound(humanChoice, computerChoice) {
 	if (humanChoice === computerChoice) {
 		document.getElementById(
 			"outcome"
-		).textContent = `oh your ${humanChoice} ties ${computerChoice}.`;
+		).textContent = `your ${humanChoice} ties ${computerChoice}.`;
 	} else if (
 		(choices.indexOf(humanChoice) === 0 &&
 			choices.indexOf(computerChoice) === 2) ||
@@ -27,12 +27,12 @@ function playRound(humanChoice, computerChoice) {
 	) {
 		document.getElementById(
 			"outcome"
-		).textContent = `yes your ${humanChoice} beats ${computerChoice}.`;
+		).textContent = `yes! your ${humanChoice} beats ${computerChoice}.`;
 		humanScore++;
 	} else {
 		document.getElementById(
 			"outcome"
-		).textContent = `no your ${humanChoice} loses to ${computerChoice}.`;
+		).textContent = `no! your ${humanChoice} loses to ${computerChoice}.`;
 		computerScore++;
 	}
 	updateScore();
