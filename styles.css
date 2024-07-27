@@ -1,0 +1,89 @@
+body {
+	font-family: "Darumadrop One", sans-serif;
+	background-color: #ffffff;
+	color: black;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+#scoreboard {
+	display: none;
+}
+
+#end {
+	display: none;
+}
+
+#game-containter {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#game-choices {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+button {
+	font-family: inherit;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#start {
+	margin: 20px 0;
+	font-size: 20px;
+}
+
+#game-choices button {
+	width: 200px;
+	height: 200px;
+	flex: 1;
+	margin: 0 10px;
+	padding: 10px;
+	font-size: 48px;
+}
+
+.clickable {
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.clickable:hover {
+	transform: translateY(-3px);
+}
+
+.clickable:active {
+	transform: translateY(3px);
+}
+
+@media (max-width: 720px) {
+	h1 {
+		font-size: 60px;
+	}
+
+	#game-choices {
+		flex-direction: column;
+	}
+
+	#game-choices button {
+		font-size: 36px;
+		margin: 5px 0;
+	}
+}
