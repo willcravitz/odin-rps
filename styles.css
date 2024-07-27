@@ -5,15 +5,18 @@ body {
 }
 
 h1 {
+	margin: 0px 0px 20px 0px;
 	font-size: 72px;
 }
 
 h2 {
 	font-size: 36px;
+	margin: 10px 0;
 }
 
 h3 {
 	font-size: 28px;
+	margin: 10px 0;
 }
 
 #scoreboard {
@@ -22,11 +25,11 @@ h3 {
 
 #end {
 	display: none;
+	font-size: 16px;
 }
 
 #game-containter {
 	text-align: center;
-	margin-top: 50px;
 }
 
 #game-choices {
